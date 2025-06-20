@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 types of function preparation</title>
+  </head>
+  <body>
+    <script>
+      // 3.perform (a+b)^2
+      // 1.With parameter and With return value
+      function findABSquare1(a,b){
+        var result
+        result=(a*a)+(2*(a*b))+(b*b)
+        return result 
+      }
+      // 2.With out parameter and With return value
+      function findABSquare2(){
+        var a,b,result
+        a=10
+        b=20
+        result=(a*a)+(2*(a*b))+(b*b)
+        return result 
+      }
+      // 3.With parameter and Without return value
+      function findABSquare3(a,b){
+        var result
+        result=(a*a)+(2*(a*b))+(b*b)
+        alert(result)
+      }
+      // 4.Without parameter and Without return value
+      function findABSquare4(){
+        var a,b,result
+        a=100
+        b=23
+        result=(a*a)+(2*(a*b))+(b*b)
+        alert(result)
+      }
+      var r1=findABSquare1(1,2)
+      alert(r1)
+      var r2=findABSquare2()
+      alert(r2)
+      findABSquare3(4,5)
+      findABSquare4()
+    </script>
+  </body>
+</html>

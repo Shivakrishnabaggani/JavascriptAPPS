@@ -1,0 +1,54 @@
+<!--
+2.Find Simple Interest 
+SI=P*T*R/100
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Simple Interest</title>
+  </head>
+  <body>
+    <script>
+      // 2.Find Simple Interest
+      // 1.With  parameter and With return value
+      function simpleInterest1(principle,time,rate_of_interest)
+      {
+        var SI
+        SI=(principle*time*rate_of_interest)/100
+        return SI
+      }
+      // 2.With out parameter and With return value
+      function simpleInterest2()
+      {
+        var principle,time,rate_of_interest,SI
+        principle=5400,time=2,rate_of_interest=5
+        SI=(principle*time*rate_of_interest)/100
+        return SI
+      }
+      // 3.With parameter and Without return value
+      function simpleInterest3(principle,time,rate_of_interest)
+      {
+        var SI
+        SI=(principle*time*rate_of_interest)/100
+        alert(SI)
+      }
+      // 4.Without parameter and Without return value
+      function simpleInterest4()
+      {
+        var principle,time,rate_of_interest,SI
+        principle=58700,time=1,rate_of_interest=2
+        SI=(principle*time*rate_of_interest)/100
+        alert(SI)
+      }
+
+      var r1 = simpleInterest1(3000,4,9)
+      alert(r1)
+      var r2 = simpleInterest2()
+      alert(r2)
+      simpleInterest3(60000,5,3)
+      simpleInterest4()
+    </script>
+  </body>
+</html>

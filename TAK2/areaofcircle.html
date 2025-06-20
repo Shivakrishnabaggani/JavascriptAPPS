@@ -1,0 +1,50 @@
+<!-- 4.Find Area of Circle -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Area of Circle</title>
+  </head>
+  <body>
+    <script>
+      // Area of Circle is A=π(r)^2
+      // 1.With parameter and With return value
+      function areaOfCircle1(radius) {
+        var area
+        const PI = 3.14
+        area = PI * (radius * radius)
+        return area 
+      }
+      // 2.With out parameter and With return value
+      function areaOfCircle2() {
+        var radius,area
+        radius=8
+        const PI = 3.14
+        area = PI * (radius * radius)
+        return area 
+      }
+      // 3.With parameter and Without return value
+      function areaOfCircle3(radius) {
+        var area
+        const PI = 3.14
+        area = PI * (radius * radius)
+        alert(area) 
+      }      
+      // 4.Without parameter and Without return value
+      function areaOfCircle4() {
+        var radius,area
+        radius=5
+        const PI = 3.14
+        area = PI * (radius * radius)
+        alert(area) 
+      }
+      var r1 = areaOfCircle1(9)
+      alert(r1)
+      var r2 = areaOfCircle2()
+      alert(r2)
+      areaOfCircle3(4)
+      areaOfCircle4()
+    </script>
+  </body>
+</html>

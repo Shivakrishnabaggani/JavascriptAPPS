@@ -1,0 +1,54 @@
+<!-- 0.Addition of 3 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of 3 numbers</title>
+  </head>
+  <body>
+    <script>
+      // 0.Addition of 3 numbers
+      // 1.With parameter and With return value
+      function additionOfThreeNumbers1(number1,number2,number3)
+      {
+        var sum
+        sum=number1+number2+number3 // business logic
+        return sum 
+      }
+      // 2.With out parameter and With return value
+      function additionOfThreeNumbers2()
+      {
+        var number1,number2,number3,sum
+        number1=34
+        number2=78
+        number3=56
+        sum=number1+number2+number3 // business logic
+        return sum 
+      }      
+      // 3.With parameter and Without return value
+      function additionOfThreeNumbers3(number1,number2,number3)
+      {
+        var sum
+        sum=number1+number2+number3 // business logic
+        alert(sum)
+      }      
+      // 4.Without parameter and Without return value
+      function additionOfThreeNumbers4()
+      {
+        var number1,number2,number3,sum
+        number1=14
+        number2=98
+        number3=46
+        sum=number1+number2+number3 // business logic
+        alert(sum) 
+      }      
+      var r1 = additionOfThreeNumbers1(4,9,12)
+      alert(r1)
+      var r2 = additionOfThreeNumbers2()
+      alert(r2)
+      additionOfThreeNumbers3(24,67,12)
+      additionOfThreeNumbers4()
+    </script>
+  </body>
+</html>

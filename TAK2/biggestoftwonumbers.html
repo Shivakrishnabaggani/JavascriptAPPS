@@ -1,0 +1,56 @@
+<!-- 5.Find biggest of 2 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find biggest of 2 numbers</title>
+  </head>
+  <body>
+    <script>
+      // 5.Find biggest of 2 numbers
+      // 1.With parameter and With return value
+      function biggestOfTwoNumbers1(number1,number2)
+      {
+        if(number1>number2)
+          return number1
+        else
+          return number2 
+      }
+      // 2.With out parameter and With return value
+      function biggestOfTwoNumbers2()
+      {
+        var number1,number2
+        number1=4,number2=8
+        if(number1>number2)
+          return number1
+        else
+          return number2 
+      }
+      // 3.With parameter and Without return value
+      function biggestOfTwoNumbers3(number1,number2)
+      {
+        if(number1>number2)
+          alert("Biggest number is: "+number1)
+        else
+          alert("Biggest number is: "+number2)
+      }
+      // 4.Without parameter and Without return value
+      function biggestOfTwoNumbers4()
+      {
+        var number1,number2
+        number1=69,number2=30
+        if(number1>number2)
+          alert("Biggest number is: "+number1)
+        else
+          alert("Biggest number is: "+number2) 
+      }
+      var r1 = biggestOfTwoNumbers1(78,54)
+      alert("Biggest number is: "+r1)
+      var r2 = biggestOfTwoNumbers2()
+      alert("Biggest number is: "+r2)
+      biggestOfTwoNumbers3(34,87)
+      biggestOfTwoNumbers4()
+    </script>
+  </body>
+</html> 

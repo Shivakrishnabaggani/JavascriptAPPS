@@ -1,0 +1,51 @@
+<!-- 1.Average of 6 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of 6 numbers</title>
+  </head>
+  <body>
+    <script>
+      // 1.Average of 6 numbers
+      // 1.With parameter and With return value
+      function averageOfSixNumbers1(number1,number2,number3,number4,number5,number6)
+      {
+        var average;
+        average=(number1+number2+number3+number4+number5+number6)/6
+        return average 
+      }
+      // 2.With out parameter and With return value
+      function averageOfSixNumbers2()
+      {
+        var number1,number2,number3,number4,number5,number6,average;
+        number1=10,number2=20,number3=30,number4=40,number5=50,number6=60
+        average=(number1+number2+number3+number4+number5+number6)/6
+        return average 
+      }    
+      // 3.With parameter and Without return value
+      function averageOfSixNumbers3(number1,number2,number3,number4,number5,number6)
+      {
+        var average;
+        average=(number1+number2+number3+number4+number5+number6)/6
+        alert(average)
+      }   
+      // 4.Without parameter and Without return value
+      function averageOfSixNumbers4()
+      {
+        var number1,number2,number3,number4,number5,number6,average;
+        number1=8,number2=7,number3=6,number4=5,number5=4,number6=3
+        average=(number1+number2+number3+number4+number5+number6)/6
+        alert(average)
+      }
+  
+      var r1 = averageOfSixNumbers1(1,2,3,4,5,6)
+      alert(r1)
+      var r2 = averageOfSixNumbers2() 
+      alert(r2)
+      averageOfSixNumbers3(2,4,6,8,10,12)
+      averageOfSixNumbers4() 
+    </script>
+  </body>
+</html>
