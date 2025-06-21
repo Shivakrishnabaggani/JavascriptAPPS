@@ -1,0 +1,60 @@
+<!-- 5.Find biggest of 2 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find biggest of 2 numbers</title>
+    <script>
+      //CALLED FUNCTIONS
+      // 5.Find biggest of 2 numbers
+      // 1.With parameter and With return value
+      let biggestOfTwoNumbers1 = function (number1,number2) // Function Expression
+      {
+        if(number1>number2) // business logic 
+          return number1
+        else
+          return number2 
+      }
+      // 2.With out parameter and With return value
+      let biggestOfTwoNumbers2 = function () // Function Expression
+      {
+        let number1,number2
+        number1=4,number2=8
+        if(number1>number2) // business logic
+          return number1
+        else
+          return number2 
+      }
+      // 3.With parameter and Without return value
+      let biggestOfTwoNumbers3 = function (number1,number2) // Function Expression
+      {
+        if(number1>number2) // business logic
+        console.log("Biggest number is: "+number1)
+        else
+        console.log("Biggest number is: "+number2)
+      }
+      // 4.Without parameter and Without return value
+      let biggestOfTwoNumbers4 = function () // Function Expression
+      {
+        let number1,number2
+        number1=69,number2=30
+        if(number1>number2) // business logic
+        console.log("Biggest number is: "+number1)
+        else
+        console.log("Biggest number is: "+number2) 
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1 = biggestOfTwoNumbers1(78,54)
+      console.log("Biggest number is: "+r1)
+      let r2 = biggestOfTwoNumbers2()
+      console.log("Biggest number is: "+r2)
+      biggestOfTwoNumbers3(34,87)
+      biggestOfTwoNumbers4()
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,58 @@
+<!-- 4.Find Area of Circle -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Area of Circle</title>
+    <script>
+      //CALLED FUNCTIONS
+      // Area of Circle is A=π(r)^2
+      // 1.With parameter and With return value
+      let areaOfCircle1 = function (radius) // Function Expression
+      {
+        let area
+        const PI = 3.14
+        area = PI * (radius * radius) // business logic
+        return area 
+      }
+      // 2.With out parameter and With return value
+      let areaOfCircle2 = function () // Function Expression
+      {
+        let radius,area
+        radius=8
+        const PI = 3.14
+        area = PI * (radius * radius) // business logic
+        return area 
+      }
+      // 3.With parameter and Without return value
+      let areaOfCircle3 = function (radius) // Function Expression
+      {
+        let area
+        const PI = 3.14
+        area = PI * (radius * radius) // business logic
+        console.log(area) 
+      }      
+      // 4.Without parameter and Without return value
+      let areaOfCircle4 = function () // Function Expression
+      {
+        let radius,area
+        radius=5
+        const PI = 3.14
+        area = PI * (radius * radius) // business logic
+        console.log(area) 
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1 = areaOfCircle1(9)
+      console.log(r1)
+      let r2 = areaOfCircle2()
+      console.log(r2)
+      areaOfCircle3(4)
+      areaOfCircle4()
+    </script>
+  </body>
+</html>

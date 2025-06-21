@@ -1,0 +1,58 @@
+<!-- 0.Addition of 3 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of 3 numbers</title>
+    <script>
+      //CALLED FUNCTIONS
+      // 0.Addition of 3 numbers
+      // 1.With parameter and With return value
+      let additionOfThreeNumbers1 = function (number1,number2,number3) // Function Expression
+      {
+        let sum
+        sum=number1+number2+number3 // business logic
+        return sum 
+      }
+      // 2.With out parameter and With return value
+      let additionOfThreeNumbers2 = function () // Function Expression
+      {
+        let number1,number2,number3,sum
+        number1=34
+        number2=78
+        number3=56
+        sum=number1+number2+number3 // business logic
+        return sum 
+      }      
+      // 3.With parameter and Without return value
+      let additionOfThreeNumbers3 = function (number1,number2,number3) // Function Expression
+      {
+        let sum
+        sum=number1+number2+number3 // business logic
+        console.log(sum)
+      }      
+      // 4.Without parameter and Without return value
+      let additionOfThreeNumbers4 = function () // Function Expression
+      {
+        let number1,number2,number3,sum
+        number1=14
+        number2=98
+        number3=46
+        sum=number1+number2+number3 // business logic
+        console.log(sum) 
+      }  
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1 = additionOfThreeNumbers1(4,9,12)
+      console.log(r1)
+      let r2 = additionOfThreeNumbers2()
+      console.log(r2)
+      additionOfThreeNumbers3(24,67,12)
+      additionOfThreeNumbers4()
+    </script>
+  </body>
+</html>

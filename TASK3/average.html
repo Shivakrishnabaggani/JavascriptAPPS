@@ -1,0 +1,54 @@
+<!-- 1.Average of 6 numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of 6 numbers</title>
+    <script>
+      //CALLED FUNCTIONS
+      // 1.Average of 6 numbers
+      // 1.With parameter and With return value
+      let averageOfSixNumbers1 = function (number1,number2,number3,number4,number5,number6) // Function Expression
+      {
+        let average;
+        average=(number1+number2+number3+number4+number5+number6)/6 // business logic
+        return average 
+      }
+      // 2.With out parameter and With return value
+      let averageOfSixNumbers2 = function () // Function Expression
+      {
+        let number1,number2,number3,number4,number5,number6,average;
+        number1=10,number2=20,number3=30,number4=40,number5=50,number6=60
+        average=(number1+number2+number3+number4+number5+number6)/6 // business logic
+        return average 
+      }    
+      // 3.With parameter and Without return value
+      let averageOfSixNumbers3 = function (number1,number2,number3,number4,number5,number6) // Function Expression
+      {
+        let average;
+        average=(number1+number2+number3+number4+number5+number6)/6 // business logic
+        console.log(average)
+      }   
+      // 4.Without parameter and Without return value
+      let averageOfSixNumbers4 = function ()  // Function Expression
+      {
+        let number1,number2,number3,number4,number5,number6,average;
+        number1=8,number2=7,number3=6,number4=5,number5=4,number6=3
+        average=(number1+number2+number3+number4+number5+number6)/6 // business logic
+        console.log(average)
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1 = averageOfSixNumbers1(1,2,3,4,5,6)
+      console.log(r1)
+      let r2 = averageOfSixNumbers2() 
+      console.log(r2)
+      averageOfSixNumbers3(2,4,6,8,10,12)
+      averageOfSixNumbers4() 
+    </script>
+  </body>
+</html>

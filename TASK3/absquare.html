@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 types of function preparation</title>
+    <script>
+      //CALLED FUNCTIONS
+      // 3.perform (a+b)^2
+      // 1.With parameter and With return value
+      let findABSquare1 = function (a,b) // Function Expression
+      {
+        let result
+        result=(a*a)+(2*(a*b))+(b*b) // business logic
+        return result 
+      }
+      // 2.With out parameter and With return value
+      let findABSquare2 = function () // Function Expression
+      {
+        let a,b,result
+        a=10
+        b=20
+        result=(a*a)+(2*(a*b))+(b*b) // business logic
+        return result 
+      }
+      // 3.With parameter and Without return value
+      let findABSquare3 = function (a,b) // Function Expression
+      {
+        let result
+        result=(a*a)+(2*(a*b))+(b*b) // business logic
+        console.log(result)
+      }
+      // 4.Without parameter and Without return value
+      let findABSquare4 = function () // Function Expression
+      {
+        let a,b,result
+        a=100
+        b=23
+        result=(a*a)+(2*(a*b))+(b*b) // business logic
+        console.log(result)
+      }      
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1=findABSquare1(1,2)
+      console.log(r1)
+      let r2=findABSquare2()
+      console.log(r2)
+      findABSquare3(4,5)
+      findABSquare4()
+    </script>
+  </body>
+</html>

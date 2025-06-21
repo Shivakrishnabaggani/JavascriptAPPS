@@ -1,0 +1,57 @@
+<!--
+2.Find Simple Interest 
+SI=P*T*R/100
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Simple Interest</title>
+    <script>
+      //CALLED FUNCTIONS
+      // 2.Find Simple Interest
+      // 1.With  parameter and With return value
+      let simpleInterest1 = function (principle, time, rate_of_interest) // Function Expression
+      {
+        let SI;
+        SI = (principle * time * rate_of_interest) / 100; // business logic
+        return SI;
+      }
+      // 2.With out parameter and With return value
+      let simpleInterest2 = function () // Function Expression
+      {
+        let principle, time, rate_of_interest, SI;
+        principle = 5400,time = 2,rate_of_interest = 5;
+        SI = (principle * time * rate_of_interest) / 100; // business logic
+        return SI;
+      }
+      // 3.With parameter and Without return value
+      let simpleInterest3 = function (principle, time, rate_of_interest) // Function Expression
+      {
+        let SI;
+        SI = (principle * time * rate_of_interest) / 100; // business logic
+        console.log(SI);
+      }
+      // 4.Without parameter and Without return value
+      let simpleInterest4 = function () // Function Expression
+      {
+        let principle, time, rate_of_interest, SI;
+        principle = 58700,time = 1,rate_of_interest = 2;
+        SI = (principle * time * rate_of_interest) / 100; // business logic
+        console.log(SI);
+      }      
+    </script>
+  </head>
+  <body>
+    <script>
+      //CALLING FUNCTIONS
+      let r1 = simpleInterest1(3000, 4, 9);
+      console.log(r1);
+      let r2 = simpleInterest2();
+      console.log(r2);
+      simpleInterest3(60000, 5, 3);
+      simpleInterest4();
+    </script>
+  </body>
+</html>
