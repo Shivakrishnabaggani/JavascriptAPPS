@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>innerHTML vs value</title>
+  </head>
+
+  <body>
+    <input type="number" placeholder="Type First Number" id="id1" />
+    <br><br>
+    <input type="number" placeholder="Type Second Number" id="id2" />
+    <br><br>
+    <button onclick="doSum()">ADD</button>
+    <br><br>
+    <span id="output"></span>
+    <script>
+      function doSum() {
+        let data1 = eval(document.getElementById("id1").value);
+        // Using eval to convert string input to number
+        let data2 = eval(document.getElementById("id2").value);
+        let result = data1 + data2;
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

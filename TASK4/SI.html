@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dom simple interest</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Enter your principal Amount" id="id1" />
+    <br /><br />
+    <input type="number" placeholder="Enter your Rate Of Interest " id="id2" />
+    <br /><br />
+    <input type="number" placeholder="Enter your tenure" id="id3" />
+    <br /><br />
+    <button onclick="simpleInterest()">Interest</button>
+    <br /><br />
+    <span id="result"></span>
+    <script>
+      function simpleInterest() {
+        let p = eval(document.getElementById("id1").value);
+        let r = eval(document.getElementById("id2").value);
+        let t = eval(document.getElementById("id3").value);
+        let output = (p * r * t) / 100;
+        document.getElementById("result").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>

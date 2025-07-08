@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Enter a number" id="id1" />
+    <br><br>
+    <button onclick="doCube()">Cube</button>
+    <br><br>
+    <span id="output"></span>
+    <script>
+      function doCube() {
+        let number = eval(document.getElementById("id1").value);
+        let result = number * number * number;
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

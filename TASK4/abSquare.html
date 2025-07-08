@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABSquare</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Enter number1" id="id1" />
+    <br><br>
+    <input type="number" placeholder="Enter number2" id="id2" />
+    <br><br>
+    <button onclick="doABSquare()">Square</button>
+    <br><br>
+    <span id="output"></span>
+    <script>
+      function doABSquare() {
+        let number1 = eval(document.getElementById("id1").value);
+        let number2 = eval(document.getElementById("id2").value);
+        let result =number1 * number1 + 2 * (number1 * number2) + number2 * number2;
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
